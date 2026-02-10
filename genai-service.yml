@@ -8,14 +8,13 @@ eureka:
     instance-id: ${spring.application.name}:${random.uuid}
 
 ---
-spring:
-  config:
-    activate:
-      on-profile: docker
 server:
   port: 8084
 eureka:
   client:
+    enabled: true
+    register-with-eureka: true
+    fetch-registry: true
     serviceUrl:
       defaultZone: http://discovery-server:8761/eureka/
 management:

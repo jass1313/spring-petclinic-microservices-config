@@ -8,10 +8,6 @@ eureka:
     instance-id: ${spring.application.name}:${random.uuid}
 
 ---
-spring:
-  config:
-    activate:
-      on-profile: docker
 server:
   port: 8081
 eureka:

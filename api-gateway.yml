@@ -18,12 +18,11 @@ server:
 spring.messages.basename: messages/messages
 
 ---
-spring:
-  config:
-    activate:
-      on-profile: docker
 eureka:
   client:
+    enabled: true
+    register-with-eureka: true
+    fetch-registry: true
     serviceUrl:
       defaultZone: http://discovery-server:8761/eureka/
 management:
