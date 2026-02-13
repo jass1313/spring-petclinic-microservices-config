@@ -1,9 +1,9 @@
-﻿server:
+server:
   port: 8761
 
 eureka:
-  instance:
-    hostname: localhost
+ instance:
+    prefer-ip-address: true
   # standalone mode
   client:
     registerWithEureka: false
