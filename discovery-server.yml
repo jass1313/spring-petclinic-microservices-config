@@ -5,7 +5,7 @@ eureka:
  instance:
     prefer-ip-address: true
   # standalone mode
-  client:
+    client:
     registerWithEureka: false
     fetchRegistry: false
     serviceUrl:
